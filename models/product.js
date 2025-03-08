@@ -20,6 +20,10 @@ const postSchema = mongoose.Schema({
     description : {
         type : String,
         required : true
+    },
+        dateTime : {
+            type : String,
+            required : true
     }
 })
 
