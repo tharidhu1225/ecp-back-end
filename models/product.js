@@ -6,6 +6,10 @@ const postSchema = mongoose.Schema({
         required : true,
         unique : true 
     },
+    dateTime : {
+        type : String,
+        required : true
+    },
     postName : {
         type :String,
         required : true
@@ -20,11 +24,8 @@ const postSchema = mongoose.Schema({
     description : {
         type : String,
         required : true
-    },
-        dateTime : {
-            type : String,
-            required : true
     }
+        
 })
 
 const Product = mongoose.model("products", postSchema);
